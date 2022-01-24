@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.*;
 
 public class Database {
-	//µ¥ÀÌÅÍº£ÀÌ½º °´Ã¼
+	//ÂµÂ¥Ã€ÃŒÃ…ÃÂºÂ£Ã€ÃŒÂ½Âº Â°Â´ÃƒÂ¼
 	
 	private String driver = "org.mariadb.jdbc.Driver";
 	private Connection connection;
@@ -25,9 +25,9 @@ public class Database {
 	    try {
 	    	Class.forName(driver);
 	        connection = DriverManager.getConnection(
-	        		"jdbc:mariadb://3.36.70.196:3306/Covid19Vaccine", 
-	        		"sogong", 
-	        		"1110");
+	        		//"jdbc:mariadb://IPNUMBER:3306/Covid19Vaccine", 
+	        		//"id", 
+	        		//"password");
 	           
 	        if( connection != null ) {
 	        	check = 1;
